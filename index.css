@@ -1,6 +1,10 @@
 
 *{
     box-sizing: border-box;
+    
+}
+body{
+    color: #238A43;
 }
 .img-1{
     position: absolute;
@@ -73,6 +77,7 @@ padding-right: 2px !important;
     font-weight: 700;
     line-height: 149px;
     margin: 15px 0px;
+    /* text-align: center; */
 
    
 }
@@ -183,7 +188,14 @@ width: 33px;
     padding: 26px 10px 25px;
     background: #238A43;
     border-radius: 1px;
+    color: white !important;
+    text-decoration: none;
 }
+.schedule_btn a{
+ color: #ffffff;
+ text-decoration: none;
+}
+   
 .schedule_btn button{
     background: #238A43;
     border-radius: 1px;
@@ -196,7 +208,7 @@ width: 33px;
     line-height: 140%;
     text-transform: uppercase;
     position: static;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 .Content_planner_wrapper{
     display: flex;
