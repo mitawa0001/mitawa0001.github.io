@@ -81,6 +81,9 @@ width: 80%;
     
 
 }
+.mobile-img-1 > img{
+    max-width: 100%;
+}
 .img-2 {
     position: relative;
     top: 0;
@@ -159,12 +162,9 @@ margin-bottom: 35px;
     background: white !important;
 }
 .active{
-    background: transparent url('./img/Rectangle\ 72.svg') 0% 0% no-repeat padding-box;
-    box-shadow: none;
-border-radius: 5px;
-color: white;
-
-
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right,#FC9E21,#FF6F61, #FE2983) !important;
 
 }
 .booking-box{
@@ -206,6 +206,14 @@ text-transform: uppercase;
 .landing-button-2{
     color: #ffffff !important;
 }
+.contact-img{
+    max-width: 100%;
+}
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    display: flex;
+}
 
 
 
@@ -218,5 +226,46 @@ text-transform: uppercase;
       
 }
 @media only screen and (max-width: 480px){
-    
+    .img-2 {
+        position: relative;
+        top: 7px;
+        left: 100px;
+        max-width: 47%;
+    }
+
+.img-3 {
+    position: relative;
+    top: -253px;
+    left: -2px;
+    opacity: 0.1;
+}
+.img-4 {
+    position: relative;
+    top: -30px;
+    left: 37px;
+    opacity: 0.2;
+}
+.section-one-img {
+    margin-top: 50px;
+}
+.heading-top {
+    text-align: center;
+    font: 22px Montserrat;
+    letter-spacing: 0px;
+    color: #222222;
+    margin-top: 30px;
+}
+.main-heading {
+    font: var(--unnamed-font-style-normal) normal bold 58px/65px Montserrat;
+    text-align: center;
+    font: normal normal bold 52px/69px Montserrat;
+    letter-spacing: 0px;
+    width: 100%;
+}
+.button{
+    margin-left: 100px;
+} 
+.section-two-title {
+    margin-top: 2px;
+}  
 }
