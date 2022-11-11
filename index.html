@@ -1,133 +1,296 @@
-
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <title>Naresh Mitawa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="./index.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L0CST5M4EJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="./img/logo.png"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active-nav" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Naresh_Mitawa_Resume_Updated.pdf" target="_blank">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col contant-heading">
-        <div class="heading-top">Web Designer / Wev Developer</div>
-        <div class="main-heading"> Hi I'm<br><span>Naresh Mitawa</span></div>
-        <button class="button"><a href="tel:8685014330">Schedule a call</a></button>
-      </div>
-      <div class="col img-section">
-        <div class="section-one-img">
-          <div class="mobile-img-1">
-            <img src="./img/Ellipse 1.svg" alt="background">
+      gtag("config", "G-L0CST5M4EJ");
+    </script>
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!-- style css  -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Y-Garg</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Y-Garg</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hii, I am<br />
+            <span class="home__title-color">Yash</span> an<br />
+            Entrepreneur
+          </h1>
+
+          <a href="#contact" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/yash-garg-30b0b01bb/"
+            class="home__social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/yash431garg/"
+            class="home__social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/Yash431garg"
+            class="home__social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://github.com/yash431garg"
+            class="home__social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i
+          ></a>
+        </div>
+
+        <div class="home__img">
+          <img src="img/y-garg-top.png" alt="Yash Garg" />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="img/y-garg.jpeg" alt="Yash Garg" />
           </div>
-          <img class="img-2" src="./img/Group 30356.png" alt="mobile-img">
-          <img class="img-3" src="./img/Group 26.svg" alt="mobile-img">
-          <img class="img-4" src="./img/Ellipse 12.png" alt="mobile-img">
+
+          <div>
+            <h2 class="about__subtitle">An Entrepreneur</h2>
+            <p class="about__text">
+              Passionate about programming & Tech has worked with startups.
+              Believe in Innovation. Involved in Stocks & Crypto. Working as a
+              developer to have some experience & will start soon by launching
+              my own products. Text me we will have a chat.
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <section>
-    <div class="section-two-title">Learn More Create More</div>
-    <div class="section-two-heading"> Work Design</div>
-  </section>
-  <div class="container">
-    <div class="row">
-      <div class="col coloum-box active ">
-        <img src="./img/video.svg" alt="icon">
-        <div class="icon-name">WordPress Page</div>
-        <!-- <button type="button" class="btn btn-light"><a href="./11-June/index.html" target="_blank"></a>Know More</button> -->
-        <button class="btn btn-light"><a class="landing-button" href="https://www.zeeva.in/dr-shweta-goswami/" target="_blank">View Page >></a></button>
-      </div>
-      <div class="col coloum-box ">
-        <img src="./img/abacus (1) (1).svg" alt="icon">
-        <div class="icon-name"> landing Page-2</div>
-        <button class="btn btn-light special"><a class="landing-button-2" href="./page 2/Index.html" target="_blank">View Page >></a></button>
-      </div>
-      <div class="col coloum-box ">
-        <img src="./img/abacus (1) (1).svg" alt="icon">
-        <div class="icon-name">Make in Figma</div>
-        <button class="btn btn-light special"><a class="landing-button-2" href="./PSD to HTML/UI-Page.pdf" target="_blank">View File >></a></button>
-      </div>
-      <div class="col coloum-box ">
-        <img src="./img/abacus (1) (1).svg" alt="icon">
-        <div class="icon-name"> ROI Calculater</div>
-        <button class="btn btn-light special"><a class="landing-button-2" href="./ROI CALCULATER/Assignment-1C (1).png" target="_blank">Know more >></a></button>
-       
-      </div>
-      <div class="w-100"></div>
-      <div class="col coloum-box ">
-        <img src="./img/abacus (1) (1).svg" alt="icon">
-        <div class="icon-name"> Hotel Page</div>
-        <button class="btn btn-light special"><a class="landing-button-2" href="./Directone/index.html" target="_blank">Know more >></a></button>
-      </div>
-      <div class="col coloum-box ">
-        <img src="./img/abacus (1) (1).svg" alt="icon">
-        <div class="icon-name"> startup Mock-up</div>
-        <button class="btn btn-light special"><a class="landing-button-2" href="./home-startup/index.html" target="_blank">Know more >></a></button>
-      </div>
-      <div class="col coloum-box ">
-        <img src="./img/abacus (1) (1).svg" alt="icon">
-        <div class="icon-name">Fun Learning App</div>
-      </div>
-      <div class="col coloum-box ">
-        <img src="./img/abacus (1) (1).svg" alt="icon">
-        <div class="icon-name">Fun Learning App</div>
-      </div>
-    </div>
-    <div>
-      <div class="row booking-box">
-        <div class="col-8 booking-content">
-          <h3>looking for Web Designer Position</h3>
-          <!-- <div>html,css,bootstrap,wordpress,Jquery</div> -->
-        <button type="button" class="btn book-consultation" href="mailto:nsmitawa123@gmail.com">Contact Me</button>
-        <!-- <button class="button"><a href="tel:8685014330">Schedule a call</a></button> -->
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              These are the skills which I am good at or I am learning. These
+              skills help me stand out from others. I love to have some
+              discussions to improve over the skills & make a good start.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="fab fa-js-square skills__icon"></i>
+
+                <span class="skills__name">Web Development</span>
+              </div>
+              <div class="skills__bar skills__web"></div>
+              <div></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="fab fa-ethereum skills__icon"></i>
+
+                <span class="skills__name">BlockChain Development</span>
+              </div>
+              <div class="skills__bar skills__blockchain"></div>
+              <div></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="fas fa-pen-alt skills__icon"></i>
+
+                <span class="skills__name">Content Writing</span>
+              </div>
+              <div class="skills__bar skills__content"></div>
+              <div></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="fas fa-chart-line skills__icon"></i>
+
+                <span class="skills__name">Stock Trading</span>
+              </div>
+              <div class="skills__bar skills__market"></div>
+              <div></div>
+            </div>
+          </div>
+
+          <div>
+            <img src="img/skills.png" alt="" class="skills__img" />
+          </div>
         </div>
-        <div class="col-4">
-          <img class="contact-img" src="./img/Group 30545 (1).svg">
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <img src="img/work1.png" alt="trading" />
+          </div>
+          <div class="work__img">
+            <img src="img/work2.png" alt="blockchain development" />
+          </div>
+          <div class="work__img">
+            <img src="img/work3.png" alt="Coding" />
+          </div>
+          <div class="work__img">
+            <img src="img/work4.png" alt="Big Business" />
+          </div>
+          <div class="work__img">
+            <img src="img/work5.png" alt="Data" />
+          </div>
+          <div class="work__img">
+            <img src="img/work6.png" alt="Tweet" />
+          </div>
         </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <!-- action="mailto:name@gmail.com" -->
+          <!-- method="POST" -->
+          <form class="contact__form" method="post" action="/">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              class="contact__input"
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="contact__input"
+            />
+            <textarea
+              id="message"
+              cols="0"
+              placeholder="Message"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <!-- type="submit" -->
+            <button class="contact__button button" type="submit">Enter</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Y-Garg</p>
+      <div class="footer__social">
+        <a
+          href="https://www.linkedin.com/in/yash-garg-30b0b01bb/"
+          class="footer__icon"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/yash431garg/"
+          class="footer__icon"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://twitter.com/Yash431garg"
+          class="footer__icon"
+          target="_blank"
+        >
+          <i class="fab fa-twitter"></i
+        ></a>
       </div>
-    </div>
-  </div>
+      <p>&#169; 2022 copyright all right reserved</p>
+    </footer>
 
-  </div>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-
-
-
-
-
-
-</body>
-
+    <!--===== MAIN JS =====-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
