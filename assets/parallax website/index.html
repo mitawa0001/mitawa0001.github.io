@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./index.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+  <section class="hero">
+
+    <img src="./images/11.jpg" class="translateY" data-speed="0.35" id="clouds" alt="">
+    <img src="./images/22.png" class="translateX" data-speed="0.25" id="moon" alt="">
+    <img src="./images/44.png" class="translateY" data-speed="0.15" id="mount" alt="">
+    <!-- <h1 id="text" class="translateX" data-speed="-3">Discover New Horizons</h1> -->
+    <!-- <a href="#" id="btn">Explore</a> -->
+    <img src="./images/33.png" class="translateY" data-speed="0.1" id="base" alt="">
+    <div class="pic-3-contant-box">
+      <h2 class="section-2-heading">Memorable Websites That Sell<span>.</span></h2>
+      <p class="section-2-footer">Your website design should convert visitors to customers, vastly improve
+        your key metrics, and display your brand with pride.
+      </p>
+      <button type="button" class="btn btn-danger view-all-work">view our work</button>
+    </div>
+
+  </section>
+  <script>
+    const translateX = document.querySelectorAll(".translateX");
+    const translateY = document.querySelectorAll(".translateY");
+    window.addEventListener("scroll", () => {
+      let scroll = window.pageYOffset;
+      // translateX.forEach(element => {
+
+      //   let speed = element.dataset.speed;
+      //   element.style.transform = `translateX(${scroll * speed}px)`;
+      // })
+      translateY.forEach(element => {
+        console.log(element, element.dataset, element.dataset.speed)
+        let speed = element.dataset.speed;
+        element.style.transform = `translateY(${scroll * speed}px)`;
+      })
+    })
+  </script>
+
+
+  <!-- section-2 -->
+  <div class="container my-5">
+    <h2 class="section-2-header container ">What makes us different from every other web design and web development
+      agency?</h2>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">We're specialized<span class="dot">.</span></h4>
+            <p class="card-text">We're not generalists, we only offer you what we do best: website redesign, branded
+              assets, UI/UX design, conversion rate optimization, and full-stack development.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">We're specialized<span class="dot">.</span></h4>
+            <p class="card-text">We're not generalists, we only offer you what we do best: website redesign, branded
+              assets, UI/UX design, conversion rate optimization, and full-stack development.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">We're specialized<span class="dot">.</span></h4>
+            <p class="card-text">We're not generalists, we only offer you what we do best: website redesign, branded
+              assets, UI/UX design, conversion rate optimization, and full-stack development.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">We're specialized<span class="dot">.</span></h4>
+            <p class="card-text">We're not generalists, we only offer you what we do best: website redesign, branded
+              assets, UI/UX design, conversion rate optimization, and full-stack development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- section-3 start -->
+    <div class="container my-4 px-0 position-static">
+      <div class="row sticky">
+        <div class="col-sm-4 sticky sticky-top">
+          <div class="card sticky-top">
+            <div class="card-block">
+              <h4 class="card-title section-3-part-header">Website designs our company just launched</h4>
+              <p class="card-text section-3-part-footer">Here's a small selection of the most recent projects we've
+                launched. For a broader
+                sense of our work, <a href="https://huemor.rocks/case-studies/">check out our case studies.</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="col-sm-12 d-flex flex-wrap">
+            <div class="col-sm-6 col-12 for-suffel">
+              <div class="card">
+                <div class="card-block">
+                  <div class="container">
+                    <div class="content">
+                      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="./images/FeaturedThumbnail_TripleSeat@2x-1024x931.png">
+                        <div class="content-details fadeIn-bottom">
+                          <h3 class="content-title">We helped Luseta increase sales and transform its digital presence
+                            with a full website redesign<span class="dot">.</span></h3>
+                          <p class="content-text"> view case Study
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="title w-100 text-start cards-header">Luseta Beauty </h3>
+                    <h6 class="title w-100 text-start cards-footer">SaaS | WordPress | B2B | Build</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <div class="card">
+                <div class="card-block">
+                  <div class="container">
+                    <div class="content">
+                      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="./images/feat-img-bc-1024x931.jpg.webp">
+                        <div class="content-details fadeIn-bottom">
+                          <h3 class="content-title">We helped Luseta increase sales and transform its digital presence
+                            with a full website redesign<span class="dot">.</span></h3>
+                          <p class="content-text"> view case Study
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="title w-100 text-start cards-header">Luseta Beauty </h3>
+                    <h6 class="title w-100 text-start cards-footer">SaaS | WordPress | B2B | Build</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12 for-suffel">
+              <div class="card">
+                <div class="card-block">
+                  <div class="container">
+                    <div class="content">
+                      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="./images/FeaturedThumbnail_TripleSeat@2x-1024x931.png">
+                        <div class="content-details fadeIn-bottom">
+                          <h3 class="content-title">We helped Luseta increase sales and transform its digital presence
+                            with a full website redesign<span class="dot">.</span></h3>
+                          <p class="content-text"> view case Study
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="title w-100 text-start cards-header">Luseta Beauty </h3>
+                    <h6 class="title w-100 text-start cards-footer">SaaS | WordPress | B2B | Build</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <div class="card">
+                <div class="card-block">
+                  <div class="container">
+                    <div class="content">
+                      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="./images/feat-img-bc-1024x931.jpg.webp">
+                        <div class="content-details fadeIn-bottom">
+                          <h3 class="content-title">We helped Luseta increase sales and transform its digital presence
+                            with a full website redesign<span class="dot">.</span></h3>
+                          <p class="content-text"> view case Study
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="title w-100 text-start cards-header">Luseta Beauty </h3>
+                    <h6 class="title w-100 text-start cards-footer">SaaS | WordPress | B2B | Build</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12 for-suffel">
+              <div class="card">
+                <div class="card-block">
+                  <div class="container">
+                    <div class="content">
+                      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="./images/FeaturedThumbnail_TripleSeat@2x-1024x931.png">
+                        <div class="content-details fadeIn-bottom">
+                          <h3 class="content-title">We helped Luseta increase sales and transform its digital presence
+                            with a full website redesign<span class="dot">.</span></h3>
+                          <p class="content-text"> view case Study
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="title w-100 text-start cards-header">Luseta Beauty </h3>
+                    <h6 class="title w-100 text-start cards-footer">SaaS | WordPress | B2B | Build</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <div class="card">
+                <div class="card-block">
+                  <div class="container">
+                    <div class="content">
+                      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="./images/FeaturedThumbnail_TripleSeat@2x-1024x931.png">
+                        <div class="content-details fadeIn-bottom">
+                          <h3 class="content-title">We helped Luseta increase sales and transform its digital presence
+                            with a full website redesign<span class="dot">.</span></h3>
+                          <p class="content-text"> view case Study
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <h5 class="title w-100 text-start cards-header">Luseta Beauty </h5>
+                    <h6 class="title w-100 text-start cards-footer">SaaS | WordPress | B2B | Build</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- section-4 -->
+  <div class="section-4 container-fluid">
+    <section id="about">
+      <div class="container grid">
+        <div class="left-content">
+          <h2 class="section-4-heading-1">Get the website of your dreams<span class="dot">.</span></h2>
+          <h4 class="section-4-sub-heading">We help brands build memorable, conversion-focused, future-proofed,
+            corporate websites and e-commerce stores.
+          </h4>
+          <h2 class="section-4-heading-2"><span class="for-hover"><a href="#"></a>Web Services</span> We Offer</h2>
+          <h2 class="section-4-heading-sub-2">
+            <a href="#"></a><span class="for-hover">Digital Strategy,</a></span>
+            <a href="#"></a><span class="for-hover">Web Design,</a></span>
+            <a href="#"></a><span class="for-hover">Content Creation,</a></span>
+            <a href="#"></a><span class="for-hover">Visual Asset Creation,</a></span>
+            <a href="#"></a><span class="for-hover">Brand Guides,</a></span>
+            <a href="#"></a><span class="for-hover">B2B Websites B2B Websites,</a></span>
+            <a href="#"></a><span class="for-hover">Digital Strategy,</a></span>
+            <a href="#"></a><span class="for-hover">Digital Strategy,</a></span>
+            <a href="#"></a><span class="for-hover">Digital Strategy,</a></span>
+          </h2>
+          <button type="button" class="btn btn-danger learn-about-build">Learn About Build</button>
+        </div>
+        <div class="right-content">
+          <div class="container">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container grid">
+        <div class="left-content">
+          <img class="special-image" src="images/about-2.jpg" alt="">
+        </div>
+        <div class="right-content">
+          <div class="left-content">
+            <h2 class="section-4-heading-1">Get the website of your dreams<span class="dot">.</span></h2>
+            <h4 class="section-4-sub-heading">We help brands build memorable, conversion-focused, future-proofed,
+              corporate websites and e-commerce stores.
+            </h4>
+            <h2 class="section-4-heading-2"><span class="for-hover"><a href="#"></a>Web Services</span> We Offer</h2>
+            <h2 class="section-4-heading-sub-2">
+              <a href="#"></a><span class="for-hover">Digital Strategy,</a></span>
+              <a href="#"></a><span class="for-hover">Web Design,</a></span>
+              <a href="#"></a><span class="for-hover">Content Creation,</a></span>
+              <a href="#"></a><span class="for-hover">Visual Asset Creation,</a></span>
+              <a href="#"></a><span class="for-hover">Brand Guides,</a></span>
+              <a href="#"></a><span class="for-hover">B2B Websites B2B Websites,</a></span>
+              <a href="#"></a><span class="for-hover">Digital Strategy,</a></span>
+              <a href="#"></a><span class="for-hover">Digital Strategy,</a></span>
+              <a href="#"></a><span class="for-hover">Digital Strategy,</a></span>
+            </h2>
+            <button type="button" class="btn btn-danger learn-about-build">Learn About Build</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <section class="testimonials">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
+                  <!-- Indicators-->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active for-color"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="for-color"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="for-color"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <!-- Item-1 -->
+                    <div class="carousel-item active text-center">
+                      <div class="d-flex flex-row">
+                        <div class="col-12 col-sm-4 slider-img">
+                          <img src="./images/slider-11 image.jpg" alt="" class="slider-img-1">
+                        </div>
+                        <div class="col-12 col-sm-8 slider-content">'
+                          <h3>"They listened to our input and interpreted it well. In addition to understating our
+                            clientele, they built each website with our internal staff in mind. Approaching the project
+                            from a business standpoint in addition to a design standpoint helped them succeed. They’re
+                            smart, dedicated, and capable."</h3>
+                          <p>- Kelly Thomas, Sr. Director of Marketing, Mission Stone &amp; Tile</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item-2 -->
+                    <div class="carousel-item text-center">
+                      <div class="d-flex flex-row">
+                        <div class="col-12 col-sm-4 slider-img">
+                          <img src="./images/slider-11 image.jpg" alt="" class="slider-img-1">
+                        </div>
+                        <div class="col-12 col-sm-8 slider-content">'
+                          <h3>"The Huemor team has that impossible combination of genuine creativity and professionalism
+                            that turns every project they work on into a success. They do truly amazing work that is
+                            unique to each client and their market. Partnering with Huemor is the best decision a
+                            company looking to reinvent its online presence can make. Great team doing great work."</h3>
+                          <p>- Kelly Thomas, Sr. Director of Marketing, Mission Stone &amp; Tile</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item-3 -->
+                    <div class="carousel-item text-center">
+                      <div class="d-flex flex-row">
+                        <div class="col-12 col-sm-4 slider-img">
+                          <img src="./images/slider-11 image.jpg" alt="" class="slider-img-1">
+                        </div>
+                        <div class="col-12 col-sm-8 slider-content">'
+                          <h3>"HUEMOR is incredibly creative in everything they do. They were able to come up with a
+                            solution for every problem we had."</h3>
+                          <p>- Kelly Thomas, Sr. Director of Marketing, Mission Stone &amp; Tile</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="carousel-control-prev control" data-target="#carouselExampleIndicators" role="button"
+                    data-slide="prev">
+                    <span class="fa fa-angle-left icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next control" data-target="#carouselExampleIndicators" role="button"
+                    data-slide="next">
+                    <span class="fa fa-angle-right icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+  </div>
+  <script src='https://code.jquery.com/jquery-2.1.0.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+
+
+  <!-- section-3 start -->
+  <div class="container px-0 sticky">
+    <div class="row for-margin">
+      <div class="col-sm-4 ">
+        <div class="card ">
+          <div class="card-block">
+            <h4 class="card-title section-3-part-header">An award-winning web agency focused on your needs. Are we a
+              match?</h4>
+            <p class="card-text section-3-part-footer">We would love the opportunity to work with you, but we understand
+              that you may have some additional questions. This quick Q&A covers a lot of the basics. If you have any
+              additional questions,<a href="https://huemor.rocks/case-studies/">check out our case studies.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8 px-5 for-overflow">
+        <div class="col-sm-12">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <i class="fa fa-plus plus-sign"></i>
+                  How much will it cost to design and
+                  develop my website?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <i class="fa fa-plus plus-sign"></i>How much will it cost to design and develop my website?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <i class="fa fa-plus plus-sign"></i>
+                  What’s a typical client-and-agency relationship like?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="">
+                  <i class="fa fa-plus plus-sign"></i>
+
+                  What does the 6-month grow engagement entail?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="">
+                  <i class="fa fa-plus plus-sign"></i>
+                  Where is your team located?
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="">
+                  <i class="fa fa-plus plus-sign"></i>
+
+                  What does the 6-month grow engagement entail?
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="">
+                  <i class="fa fa-plus plus-sign"></i>
+                  Where is your team located?
+                </button>
+              </h2>
+              <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="">
+                  <i class="fa fa-plus plus-sign"></i>
+
+                  Will you be there for me after the website is complete?
+                </button>
+              </h2>
+              <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="">
+                  <i class="fa fa-plus plus-sign"></i>
+
+                  What does the 6-month grow engagement entail?
+                </button>
+              </h2>
+              <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="">
+                  <i class="fa fa-plus plus-sign"></i>
+                  Will you be there for me after the website is complete?
+                </button>
+              </h2>
+              <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEleven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="">
+                  <i class="fa fa-plus plus-sign"></i>
+                  Where is your team located?
+                </button>
+              </h2>
+              <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingtwelve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapsetwelve" aria-expanded="false" aria-controls="">
+                  <i class="fa fa-plus plus-sign"></i>
+                  Will you be there for me after the website is complete?
+                </button>
+              </h2>
+              <div id="flush-collapsetwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Each business's needs are different, so due to variations in scope, pricing
+                  from one web design to the next can be quite different. Our typical end-to-end website redesign costs
+                  $50,000-$100,000.</div>
+                <div class="more-details"> for a more refined estimate. If you’d like a more detailed breakdown of the
+                  pricing, request a
+                  copy of our pricing sheet.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- section-6 -->
+  <section class="">
+    <div class="section-6" id="module">
+      <div class="section-img-box">
+        <img class="for-effect-img" src="./images/pink-blue-space-bg-compressor.jpg" alt="background-image">
+        <div class="about-us">About Us</div>
+        <div class="module"><img src="./images/viv-space-compressor.png">
+          <div class="module-2"><img src="./images/coffee-cup-floating-compressor.png">
+          </div>
+          <!-- <div class="module-2" id="module-2">
+        </div> -->
+        </div>
+        <!-- <div class=" container col-12 col-md-6 col-sm-2">
+          <div class="col-2">
+            <h2>for sale</h2>
+            <p><a class="mobile-no" href="tel:+4733378901">+47 333 78 901</a></p>
+            <p><a class="mail-no" href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+          </div>
+        </div> -->
+      </div>
+  </section>
+  <script>
+    const el = document.querySelector("#module");
+    el.addEventListener("mousemove", (e) => {
+      el.style.backgroundPositionX = -e.offsetX + "px";
+      el.style.backgroundPositionY = -e.offsetY + "px";
+    });
+  </script>
+  <script>
+    const el_1 = document.querySelector("#module-2");
+    el_1.addEventListener("mousemove", (e) => {
+      el_1.style.backgroundPositionX = -e.offsetX + "px";
+      el_1.style.backgroundPositionY = -e.offsetY + "px";
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>
