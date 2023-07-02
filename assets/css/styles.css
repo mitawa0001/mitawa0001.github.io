@@ -71,7 +71,7 @@ ul {
   list-style: none;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 img {
   max-width: 100%;
@@ -103,7 +103,9 @@ img {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
-
+.text-center{
+  text-align: center;
+}
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
