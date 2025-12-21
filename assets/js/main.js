@@ -75,12 +75,12 @@ contactForm.addEventListener("submit", function (e) {
   xhr.setRequestHeader("content-type", "application/json");
   xhr.onload = function () {
     if (xhr.responseText == "success") {
-      alert("Thankyou your message has been sent");
-      name = "";
-      email = "";
-      message = "";
+      alert("Thank you! Your message has been sent.");
+      name.value = "";
+      email.value = "";
+      message.value = "";
     } else {
-      alert("Sorry something went wrong");
+      alert("Sorry, something went wrong. Please try again.");
     }
   };
   xhr.send(JSON.stringify(formData));

@@ -1,24 +1,26 @@
 {
-  "name": "personal",
+  "name": "naresh-portfolio",
   "version": "1.0.0",
-  "description": "This is my portfolio website",
+  "description": "Naresh Mitawa's portfolio website",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [
-    "Yash"
+    "portfolio",
+    "naresh",
+    "mitawa"
   ],
-  "author": "Yash Garg",
+  "author": "Naresh Mitawa",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "nodemailer": "^6.6.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.0",
+    "nodemailer": "^6.9.8",
     "serve-favicon": "^2.5.0"
   },
   "engines": {
-    "node": "14.x"
+    "node": ">=18.x"
   }
 }

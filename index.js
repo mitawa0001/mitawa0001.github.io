@@ -14,6 +14,23 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 app.post("/", (req, res) => {
+  const { name, email, message } = req.body;
+
+  // Validate required fields
+  if (!name || !email || !message) {
+    return res.status(400).send("All fields are required");
+  }
+
+  // Basic email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).send("Invalid email address");
+  }
+
+  // Sanitize inputs (basic XSS prevention)
+  const sanitize = (str) => str.replace(/[<>]/g, "");
+  const sanitizedName = sanitize(name.trim());
+  const sanitizedMessage = sanitize(message.trim());
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -22,16 +39,18 @@ app.post("/", (req, res) => {
       pass: process.env.PASS,
     },
   });
+
   const mailOptions = {
-    from: req.body.email,
+    from: email,
     to: process.env.EMAIL,
-    subject: `Message from ${req.body.name}`,
-    text: req.body.message,
-  }
+    subject: `Portfolio Contact: Message from ${sanitizedName}`,
+    text: `Name: ${sanitizedName}\nEmail: ${email}\n\nMessage:\n${sanitizedMessage}`,
+  };
 
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
-      res.send(err);
+      console.error("Email error:", err);
+      res.status(500).send("Failed to send message");
     } else {
       res.send("success");
     }
