@@ -50,10 +50,18 @@ sr.reveal(".skills__text", {});
 sr.reveal(".skills__data", { interval: 200 });
 sr.reveal(".skills__img", { delay: 600 });
 
+/*SCROLL EXPERIENCE*/
+sr.reveal(".experience__item", { interval: 200 });
+sr.reveal(".experience__cta", { delay: 200 });
+
 /*SCROLL WORK*/
-sr.reveal(".work__img", { interval: 200 });
+sr.reveal(".work__item", { interval: 200 });
+
+/*SCROLL CREDENTIALS*/
+sr.reveal(".credentials__card", { interval: 200 });
 
 /*SCROLL CONTACT*/
+sr.reveal(".contact__detail", { interval: 100 });
 sr.reveal(".contact__input", { interval: 100 });
 
 // form

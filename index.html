@@ -29,7 +29,11 @@
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
 
-  <title>Naresh Mitawa</title>
+  <meta name="description"
+    content="Naresh Mitawa - MERN Stack Developer with 3 years of experience building React, Next.js and Node applications for US enterprise and government clients." />
+  <meta name="author" content="Naresh Mitawa" />
+
+  <title>Naresh Mitawa | MERN Stack Developer</title>
 </head>
 
 <body>
@@ -52,13 +56,16 @@
             <a href="#skills" class="nav__link">Skills</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">Experience</a>
+            <a href="#experience" class="nav__link">Experience</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Projects</a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
           <li class="nav__item">
-            <a href="./assets/NMResume.pdf" class="nav__link" download>Download Resume</a>
+            <a href="./assets/NMResume.pdf" class="nav__link nav__link--resume" download>Resume</a>
           </li>
         </ul>
       </div>
@@ -76,9 +83,16 @@
         <h1 class="home__title">
           Hi, I'm<br />
           <span class="home__title-color">Naresh</span><br />
-          Software Developer
+          MERN Stack Developer
         </h1>
-        <a href="#contact" class="button">Contact</a>
+        <p class="home__subtitle">
+          React &middot; Next.js &middot; Node &middot; TypeScript &mdash; building multi-tenant SaaS and
+          LLM-powered products for US enterprise and government clients.
+        </p>
+        <div class="home__buttons">
+          <a href="#contact" class="button">Contact</a>
+          <a href="./assets/NMResume.pdf" class="button button--ghost" download>Download Resume</a>
+        </div>
       </div>
 
       <div class="home__social">
@@ -107,13 +121,20 @@
         </div>
 
         <div>
-          <h2 class="about__subtitle">Front-end Developer</h2>
+          <h2 class="about__subtitle">MERN Stack Developer</h2>
           <p class="about__text">
-            Results-driven Front-end Developer with 3+ years of experience building scalable, high-performance web applications.
-            Skilled in creating visually appealing, user-centric interfaces using JavaScript, Node.js, React.js, TypeScript, and modern frameworks.
-            Currently working at BuzzClan Inc., contributing to AI-powered document processing workflows and multi-tenant CRM platforms.
-            Expert in troubleshooting complex issues, managing multiple projects simultaneously, and delivering seamless user experiences.
+            MERN Stack developer with 3 years of experience building React JS, Next.js, and Node JS applications for
+            US enterprise and government clients &mdash; including BuzzClan's flagship records platform serving 130+ public
+            agencies and a City of Long Beach admin portal. Specializes in multi-tenant SaaS UI, LLM workflow integration,
+            and agentic coding with Claude Code, having shipped 20+ production modules across government, healthcare
+            staffing, and proposal management. A BBA background brings the business judgment managers value when
+            translating client needs into clean engineering.
           </p>
+          <ul class="about__highlights">
+            <li><span>3</span> Years Experience</li>
+            <li><span>20+</span> Production Modules</li>
+            <li><span>130+</span> Public Agencies Served</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -124,16 +145,18 @@
 
       <div class="skills__container bd-grid">
         <div>
-          <h2 class="skills__subtitle">Professional Skills</h2>
+          <h2 class="skills__subtitle">Technical Skills</h2>
           <p class="skills__text">
-            Proficient in JavaScript (ES6+), React.js, Node.js, Redux Toolkit, TypeScript, and modern frontend frameworks.
-            Experienced with AI & LLM tools including Claude AI, OpenAI API, and Prompt Engineering.
-            Strong expertise in MUI, Bootstrap, Tailwind CSS, REST APIs, and version control with Git.
+            Day-to-day stack is React, TypeScript and Node across multi-tenant SaaS products, with Redux Toolkit and
+            RTK Query for state and data fetching, and Material UI or Tailwind for the interface layer. Comfortable
+            integrating LLM workflows &mdash; prompt templates, streaming responses and async job queues &mdash; alongside
+            REST APIs, JWT auth and third-party services such as Google Drive and QuickBooks.
           </p>
+
           <div class="skills__data">
             <div class="skills__names">
               <i class="fab fa-react skills__icon"></i>
-              <span class="skills__name">React.js / Node.js / Redux / TypeScript</span>
+              <span class="skills__name">React / Next.js / Redux / RTK Query</span>
             </div>
             <div class="skills__bar skills__web"></div>
             <div></div>
@@ -142,7 +165,7 @@
           <div class="skills__data">
             <div class="skills__names">
               <i class="fab fa-js-square skills__icon"></i>
-              <span class="skills__name">JavaScript (ES6+)</span>
+              <span class="skills__name">JavaScript (ES6+) &amp; TypeScript</span>
             </div>
             <div class="skills__bar skills__content"></div>
             <div></div>
@@ -150,8 +173,17 @@
 
           <div class="skills__data">
             <div class="skills__names">
+              <i class="fab fa-node-js skills__icon"></i>
+              <span class="skills__name">Node.js / Express / REST APIs</span>
+            </div>
+            <div class="skills__bar skills__web"></div>
+            <div></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
               <i class="fas fa-robot skills__icon"></i>
-              <span class="skills__name">AI & LLM Tools</span>
+              <span class="skills__name">Claude Code / Anthropic &amp; OpenAI APIs</span>
             </div>
             <div class="skills__bar skills__market"></div>
             <div></div>
@@ -160,7 +192,16 @@
           <div class="skills__data">
             <div class="skills__names">
               <i class="fab fa-css3-alt skills__icon"></i>
-              <span class="skills__name">MUI / Tailwind / Bootstrap</span>
+              <span class="skills__name">Tailwind CSS / Material UI / SCSS</span>
+            </div>
+            <div class="skills__bar skills__content"></div>
+            <div></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="fas fa-database skills__icon"></i>
+              <span class="skills__name">PostgreSQL / MongoDB / Supabase</span>
             </div>
             <div class="skills__bar skills__web"></div>
             <div></div>
@@ -169,7 +210,7 @@
           <div class="skills__data">
             <div class="skills__names">
               <i class="fab fa-git-alt skills__icon"></i>
-              <span class="skills__name">Git & REST APIs</span>
+              <span class="skills__name">Git / Jest / RTL / Vite / Jira</span>
             </div>
             <div class="skills__bar skills__content"></div>
             <div></div>
@@ -177,89 +218,216 @@
         </div>
 
         <div>
-          <img src="./assets/img/skills.png" alt="" class="skills__img" />
+          <img src="./assets/img/skills.png" alt="Skills" class="skills__img" />
+
+          <div class="skills__stack">
+            <h3 class="skills__stack-title">Toolbox</h3>
+            <div class="skills__tags">
+              <span class="skills__tag">JavaScript (ES6+)</span>
+              <span class="skills__tag">TypeScript</span>
+              <span class="skills__tag">React</span>
+              <span class="skills__tag">Next.js</span>
+              <span class="skills__tag">Node</span>
+              <span class="skills__tag">Express</span>
+              <span class="skills__tag">Redux</span>
+              <span class="skills__tag">RTK Query</span>
+              <span class="skills__tag">React Hook Form</span>
+              <span class="skills__tag">Tailwind CSS</span>
+              <span class="skills__tag">Material UI</span>
+              <span class="skills__tag">HTML5</span>
+              <span class="skills__tag">CSS3</span>
+              <span class="skills__tag">SCSS</span>
+              <span class="skills__tag">Claude Code</span>
+              <span class="skills__tag">Anthropic API</span>
+              <span class="skills__tag">OpenAI API</span>
+              <span class="skills__tag">Prompt Engineering</span>
+              <span class="skills__tag">Streaming Responses</span>
+              <span class="skills__tag">AI Agents</span>
+              <span class="skills__tag">REST APIs</span>
+              <span class="skills__tag">WebSockets</span>
+              <span class="skills__tag">JWT Auth</span>
+              <span class="skills__tag">Google Drive API</span>
+              <span class="skills__tag">QuickBooks API</span>
+              <span class="skills__tag">Core Web Vitals</span>
+              <span class="skills__tag">PostgreSQL</span>
+              <span class="skills__tag">MongoDB</span>
+              <span class="skills__tag">Supabase</span>
+              <span class="skills__tag">Jest</span>
+              <span class="skills__tag">React Testing Library</span>
+              <span class="skills__tag">Vite</span>
+              <span class="skills__tag">Git</span>
+              <span class="skills__tag">GitHub</span>
+              <span class="skills__tag">Jira</span>
+              <span class="skills__tag">Agile / Scrum</span>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!--===== EXPERIENCE =====-->
+    <section class="experience section" id="experience">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="experience__container bd-grid">
+        <article class="experience__item">
+          <div class="experience__header">
+            <div>
+              <h3 class="experience__role">Associate, Software Development</h3>
+              <span class="experience__company">BuzzClan Inc.</span>
+            </div>
+            <span class="experience__date">Feb 2024 &ndash; Present</span>
+          </div>
+          <p class="experience__summary">
+            Full-Stack Developer specializing in AI-powered applications, contributing to BuzzClan&rsquo;s flagship products
+            and US client engagements across multi-tenant SaaS platforms in government, healthcare staffing, and
+            proposal management.
+          </p>
+          <ul class="experience__list">
+            <li>Shipped React modules for Document Classification, State Rules, and Deep Scanning in DMMS, BuzzClan&rsquo;s records platform for 130+ public agencies, cutting feature delivery time by 30% via shared multi-tenant patterns.</li>
+            <li>Built an admin portal for the City of Long Beach to monitor ticketing services and mobile app logs, running weekly client demos and shipping 15+ reusable RTK Query components that cut page loads by 20%.</li>
+            <li>Built the Award Onboarding module for BuzzRFP, BuzzClan&rsquo;s multi-tenant CRM, integrating Google Drive Online APIs to automate document and revenue workflows, removing 20+ weekly manual hours.</li>
+            <li>Shipped 4 modules for Volticare, a healthcare staffing platform, including NPI search and geolocation-based provider filtration, improving recruiter search-to-match time by 35% in production.</li>
+            <li>Built reusable React patterns for LLM workflows (prompt templates, streaming responses, async job queues), adopted across DMMS and BuzzRFP, cutting AI feature ship time by 50%.</li>
+            <li>Reduced critical production issue resolution time by 50% across DMMS and BuzzRFP via structured Chrome DevTools profiling, network log analysis, and reproducible bug reports adopted team-wide.</li>
+          </ul>
+        </article>
+
+        <article class="experience__item">
+          <div class="experience__header">
+            <div>
+              <h3 class="experience__role">Web Developer</h3>
+              <span class="experience__company">Self-Employed</span>
+            </div>
+            <span class="experience__date">Feb 2023 &ndash; Jan 2024</span>
+          </div>
+          <p class="experience__summary">
+            Combined freelance Full Stack work for small Indian business clients with personal investment portfolio
+            management and self-directed React and Node learning between full-time engineering roles.
+          </p>
+          <ul class="experience__list">
+            <li>Delivered 3 freelance React projects for small Indian business clients in coaching and real estate, shipping landing pages and admin dashboards within 2 to 3 week cycles at 100% on-time delivery.</li>
+            <li>Managed a personal equity and mutual fund portfolio of 12+ holdings, applying BBA-trained business analysis to research positions and tracking returns through a custom React dashboard built end-to-end.</li>
+            <li>Completed self-directed React, Node, TypeScript, and Next.js learning through structured coursework and 6+ practice projects, building a pattern library that fed directly into production work at BuzzClan.</li>
+          </ul>
+        </article>
+
+        <article class="experience__item">
+          <div class="experience__header">
+            <div>
+              <h3 class="experience__role">Web Developer</h3>
+              <span class="experience__company">TNC Inc.</span>
+            </div>
+            <span class="experience__date">Aug 2022 &ndash; Jan 2023</span>
+          </div>
+          <p class="experience__summary">
+            Frontend developer on small project teams building React POCs and production web tools for B2B
+            industrial-consulting clients across automotive and manufacturing engagements.
+          </p>
+          <ul class="experience__list">
+            <li>Built client POCs in React and JavaScript, translating business requirements into functional prototypes that secured project approvals from 3 enterprise clients across automotive and industrial verticals.</li>
+            <li>Developed responsive UI components in HTML5, CSS3, and Bootstrap, delivering pixel-accurate layouts across desktop and mobile breakpoints and reducing post-handoff design revisions by 40%.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="experience__cta text-center">
+        <a href="./assets/NMResume.pdf" class="button" download>Download Full Resume</a>
       </div>
     </section>
 
     <!--===== WORK =====-->
     <section class="work section" id="work">
-      <h2 class="section-title">Projects & Experience</h2>
+      <h2 class="section-title">Projects</h2>
 
       <div class="work__container bd-grid">
-        <!-- BuzzRFP - AI Document Processing -->
+        <!-- DMMS -->
         <div class="work__item">
           <div class="work__img">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI Document Processing" />
+            <img src="https://images.unsplash.com/photo-1568667256549-094345857637?w=400&h=300&fit=crop" alt="DMMS records platform" />
           </div>
           <div class="work__info">
-            <h3>AI Document Processing Platform</h3>
-            <p>Built frontend interfaces for LLM-based document analysis, prompt template management, and automated workload queuing systems at BuzzClan Inc.</p>
-            <span class="work__tech">JavaScript | MUI | LLM Integration | AI Agents</span>
+            <h3>DMMS &mdash; Records Platform</h3>
+            <p>React modules for Document Classification, State Rules, and Deep Scanning on BuzzClan&rsquo;s flagship records platform serving 130+ public agencies. Shared multi-tenant patterns cut feature delivery time by 30%.</p>
+            <span class="work__tech">React | TypeScript | Multi-tenant SaaS | LLM Workflows</span>
           </div>
         </div>
 
-        <!-- Award Onboarding Module -->
+        <!-- City of Long Beach -->
         <div class="work__item">
           <div class="work__img">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="CRM Platform" />
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="City of Long Beach admin portal" />
           </div>
           <div class="work__info">
-            <h3>Multi-tenant CRM Platform</h3>
-            <p>Implemented multi-step workflows with Google Drive API for document management and QuickBooks Online API for revenue tracking.</p>
-            <span class="work__tech">React | MUI | Google Drive API | QuickBooks API</span>
+            <h3>City of Long Beach Admin Portal</h3>
+            <p>Admin portal monitoring ticketing services and mobile app logs for a US government client. Shipped 15+ reusable RTK Query components that cut page loads by 20%, with weekly client demos.</p>
+            <span class="work__tech">React | RTK Query | Redux | Data Visualization</span>
           </div>
         </div>
 
-        <!-- Healthcare & Job Portal -->
+        <!-- BuzzRFP -->
         <div class="work__item">
           <div class="work__img">
-            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=300&fit=crop" alt="Healthcare Portal" />
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="BuzzRFP multi-tenant CRM" />
           </div>
           <div class="work__info">
-            <h3>Healthcare & Job Portal</h3>
-            <p>Developed user-focused portals with geolocation-based search filtration and dynamic API-driven content for improved accessibility.</p>
-            <span class="work__tech">React | REST API | Geolocation | MUI</span>
+            <h3>BuzzRFP &mdash; Award Onboarding</h3>
+            <p>Award Onboarding module for a multi-tenant CRM, integrating Google Drive Online APIs to automate document and revenue workflows &mdash; removing 20+ manual hours every week.</p>
+            <span class="work__tech">React | Material UI | Google Drive API | QuickBooks API</span>
           </div>
         </div>
 
-        <!-- Geo Ticket Assist Portal -->
+        <!-- Volticare -->
         <div class="work__item">
           <div class="work__img">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data Visualization Dashboard" />
+            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=300&fit=crop" alt="Volticare healthcare staffing" />
           </div>
           <div class="work__info">
-            <h3>Geo Ticket Assist Portal</h3>
-            <p>Designed data visualization components that reduced page load times by 20%. Built with modern React patterns and performance optimization.</p>
-            <span class="work__tech">React | Data Visualization | Performance Optimization</span>
+            <h3>Volticare &mdash; Healthcare Staffing</h3>
+            <p>Four production modules including NPI search and geolocation-based provider filtration, improving recruiter search-to-match time by 35%.</p>
+            <span class="work__tech">React | REST APIs | Geolocation | Material UI</span>
           </div>
         </div>
 
-        <!-- Vertipride Solutions -->
+        <!-- Preconsultify -->
         <div class="work__item">
           <div class="work__img">
-            <a href="https://company-web.vertipridesolutions.in/" target="_blank">
-              <img src="./assets/img/IT APP.jpg" alt="Vertipride Solutions" />
+            <a href="https://www.preconsultify.com/" target="_blank" rel="noopener">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=300&fit=crop" alt="Preconsultify consulting marketplace" />
             </a>
           </div>
           <div class="work__info">
-            <h3>Vertipride Solutions</h3>
-            <p>Corporate web application built with React.js, featuring modern UI/UX design and responsive layouts.</p>
-            <span class="work__tech">React | JavaScript | CSS3</span>
+            <h3>Consulting Marketplace &mdash; Marketing Site</h3>
+            <p>A Next.js marketing and lead-generation site for Preconsultify, a curated consulting marketplace connecting Indian companies with vetted independent consultants.</p>
+            <span class="work__tech">Next.js | React | Tailwind CSS | SEO | Responsive Design</span>
           </div>
         </div>
 
-        <!-- Fox Restaurant -->
-        <div class="work__item">
-          <div class="work__img">
-            <a href="https://foxeresto.vercel.app/" target="_blank">
-              <img src="./assets/img/IMG_2.jpeg" alt="Fox Restaurant App" />
-            </a>
+      </div>
+    </section>
+
+    <!--===== EDUCATION & CERTIFICATIONS =====-->
+    <section class="credentials section" id="credentials">
+      <h2 class="section-title">Education &amp; Certifications</h2>
+
+      <div class="credentials__container bd-grid">
+        <div class="credentials__card">
+          <h3 class="credentials__title"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="credentials__entry">
+            <h4>Bachelor of Business Administration</h4>
+            <span class="credentials__meta">Chitkara University, Rajpura, India &middot; 2018 &ndash; 2021</span>
           </div>
-          <div class="work__info">
-            <h3>Fox Restaurant</h3>
-            <p>Custom React application with modern UI design, showcasing food ordering interface with smooth animations.</p>
-            <span class="work__tech">React | Vercel | CSS3</span>
+        </div>
+
+        <div class="credentials__card">
+          <h3 class="credentials__title"><i class="fas fa-certificate"></i> Certifications</h3>
+          <div class="credentials__entry">
+            <h4>Anthropic Claude Developer Path</h4>
+            <span class="credentials__meta">Claude 101, Claude Code 101, Claude Cowork &middot; 2026</span>
+          </div>
+          <div class="credentials__entry">
+            <h4>Namaste JavaScript &amp; Namaste React</h4>
+            <span class="credentials__meta">namastedev.com &middot; 2024</span>
           </div>
         </div>
       </div>
@@ -270,8 +438,25 @@
       <h2 class="section-title">Contact</h2>
 
       <div class="contact__container bd-grid">
-        <!-- action="mailto:name@gmail.com" -->
-        <!-- method="POST" -->
+        <div class="contact__details">
+          <a class="contact__detail" href="mailto:nsmitawa123@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span>nsmitawa123@gmail.com</span>
+          </a>
+          <a class="contact__detail" href="tel:+918685014330">
+            <i class="fas fa-phone"></i>
+            <span>+91 8685014330</span>
+          </a>
+          <span class="contact__detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Bhiwani, Haryana, India</span>
+          </span>
+          <a class="contact__detail" href="https://www.linkedin.com/in/naresh-68693b171/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin-in"></i>
+            <span>linkedin.com/in/naresh-68693b171</span>
+          </a>
+        </div>
+
         <form class="contact__form" method="post" action="/">
           <input type="text" id="name" placeholder="Name" class="contact__input" required />
           <input type="email" id="email" placeholder="Email" class="contact__input" required />
@@ -280,14 +465,18 @@
         </form>
       </div>
     </section>
+
   </main>
 
   <!--===== FOOTER =====-->
   <footer class="footer">
     <p class="footer__title">Naresh Mitawa</p>
     <div class="footer__social">
-      <a href="https://www.linkedin.com/in/naresh-mitawa-278aa6279/" class="footer__icon" target="_blank">
+      <a href="https://www.linkedin.com/in/naresh-68693b171/" class="footer__icon" target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/mitawa0001" class="footer__icon" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
       </a>
       <a href="https://www.instagram.com/nsmitawa_/" class="footer__icon" target="_blank">
         <i class="fab fa-instagram"></i>
@@ -295,7 +484,7 @@
       <a href="https://twitter.com/nsmmitawa" class="footer__icon" target="_blank">
         <i class="fab fa-twitter"></i></a>
     </div>
-    <p>&#169; 2025 copyright all rights reserved</p>
+    <p>&#169; 2026 Naresh Mitawa. All rights reserved.</p>
   </footer>
 
   <!--===== SCROLL REVEAL =====-->
